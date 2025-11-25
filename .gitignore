@@ -1,0 +1,23 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE files
+.idea/
+.vscode/
+
+# Behave and Playwright artifacts
+pretty.output
+reports/
+test-results/
+playwright-report/
+blob-report/
+
+# OS / misc
+*.log
+.DS_Store
