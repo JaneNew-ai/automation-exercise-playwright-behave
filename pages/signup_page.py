@@ -5,14 +5,17 @@ from features.helpers.test_data import valid_signup_user_data
 
 class SignupPage(BasePage):
     def complete_registration(self) -> None:
-    # Title radio button if it has a label
+        password_field = self.page.locator("[data-qa='password']")
+        expect(password_field).to_be_visible()
+        
+        # Title radio button if it has a label
         try:
             self.page.get_by_label("Mrs").check()
         except Exception:
             # If label text is different or there is no label you can skip this
             pass
 
-        self.page.locator("[data-qa='password']").fill(valid_signup_user_data["password"])
+        password_field.fill(valid_signup_user_data["password"])
 
         # DOB
         self.page.locator('div#uniform-days').click()
