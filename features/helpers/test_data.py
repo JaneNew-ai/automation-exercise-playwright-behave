@@ -1,4 +1,4 @@
-valid_user_email = 'lorajk066@can.com'
+valid_user_email = 'lofdgrajk066@can.com'
 valid_user_password = 'password123'
 valid_user_name = 'John'
 
