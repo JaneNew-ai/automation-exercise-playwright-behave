@@ -1,0 +1,17 @@
+Feature: Home, Signup and Login flows # features/auth.feature:1
+
+  Scenario: Home page title contains Automation Exercise     # features/auth.feature:3
+    Given I open the home page                               # features/steps/auth_steps.py:13
+    Then the page title should contain "Automation Exercise" # features/steps/auth_steps.py:18
+
+  Scenario: User can register a new account                                # features/auth.feature:7
+    Given I open the home page                                             # features/steps/auth_steps.py:13
+    When I register a new user                                             # features/steps/auth_steps.py:28
+    Then the account should be created and I should see "ACCOUNT CREATED!" # features/steps/auth_steps.py:38
+
+  Scenario: Registered user can login               # features/auth.feature:12
+    Given I have a registered user                  # features/steps/auth_steps.py:49
+    When I open the login page                      # features/steps/auth_steps.py:53
+    And I login with the registered user            # features/steps/auth_steps.py:58
+    Then I should be logged in and see the username # features/steps/auth_steps.py:62
+
