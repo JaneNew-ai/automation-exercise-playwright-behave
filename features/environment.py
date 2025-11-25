@@ -5,7 +5,7 @@ def before_all(context):
     # Start Playwright and launch browser once for all scenarios
     context.playwright = sync_playwright().start()
     context.browser = context.playwright.chromium.launch(
-        headless=False, slow_mo=500
+        headless=True, slow_mo=500
     )
 
 def before_scenario(context, scenario):
