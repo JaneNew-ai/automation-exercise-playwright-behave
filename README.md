@@ -38,3 +38,9 @@ Validates that a new user can:
 
 All tests are written in Gherkin for readability and business-level clarity.
 
+
+👩‍💻 Author
+
+Evgeniia Novikova — Software QA Automation Engineer
+Specialized in Playwright, Selenium, API automation, CI/CD integration, and scalable test architecture.
+
